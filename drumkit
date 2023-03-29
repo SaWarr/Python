@@ -43,7 +43,7 @@ while run:
 
     for event in pygame.event.get(): #checks all key/mouse events
         if event.type ==pygame.QUIT:
-            run = FALSE
+            run = False
     
     pygame.display.flip()
 pygame.quit()
