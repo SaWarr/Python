@@ -23,3 +23,19 @@ val_one = float(input("Enter the first value: "))
 val_two = float(input("Enter the second value: "))
 result = val_one + val_two # Could expand this with more input options to encompass different operations
 print("Your total is: "+ str(result))
+
+# suggest a word game
+food = input("Enter an object: ")
+number = input("Enter another, slightly weirder object: ")
+father = input("Almost there: ")
+son = input("Last one: ")
+print("My favourite food is "+food)
+print("My lucky number is "+number)
+print("Like "+ father +" like "+ son + ".")
+
+# Combine lists
+list_1 = [1,1,2,3,5,8,13,21]
+list_2 = [13,16,18,21,30,40]
+list_1.extend(list_2)
+list_1.insert(8,69)
+print(list_1)
