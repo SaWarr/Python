@@ -34,8 +34,34 @@ print("My lucky number is "+number)
 print("Like "+ father +" like "+ son + ".")
 
 # Combine lists
-list_1 = [1,1,2,3,5,8,13,21]
+list_1 = [1,1,2,3,5,8,13,21] # Tuple would use ()
 list_2 = [13,16,18,21,30,40]
 list_1.extend(list_2)
 list_1.insert(8,69)
 print(list_1)
+
+# Functions refresher
+def rp1(): # Define
+    print("Ready player one")
+# Call
+rp1()
+# Little more;
+def rp2(name):
+    print("Ready "+name)
+rp2("Player Two")
+rp2(input("What is your name? "))
+
+def cube(num):
+    return (num*num*num)
+print(cube(3)) # Consider storing value as variable print(result)
+
+def max_num(num1, num2, num3):
+    if num1 >= num2 and num1 >= num3:
+        result = num1
+    elif num2 >= num1 and num2 >= num3:
+        result = num2
+    else:
+        result = num3
+    return result
+print(max_num(2,6,7))
+
