@@ -1,0 +1,11 @@
+# Weight Converter Kg to Lbs; below from memory, line 9ish onwards would be developing this
+weight = float(input("How much do you weigh?: "))
+units = input("And is that in (L)bs or (K)gs?: ")
+if units == "K":
+    print("That's "+str(weight * 2.20462)+" in lbs.")
+elif units == "L":
+    print("That's "+str(weight / 2.20462)+" in kg.")
+else:
+    print("Please give units in K or L...") # This needs to loop back!
+
+# Not quite sure how to develop this further other than to get it to loop back and request re-entry of info
