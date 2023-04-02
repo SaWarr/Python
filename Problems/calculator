@@ -1,0 +1,15 @@
+# Simple addition calculator - below from memory, line 6ish onwards would be developing this
+val_one = float(input("Enter the first value: "))
+val_two = float(input("Enter the second value: "))
+result = val_one + val_two 
+print("Your total is: "+ str(result))
+
+"""
+logical next step for this would be to add a choice of operator
+could quite easily do this with text input
+ie 
+oper = input("Please choose one: '+', '-', '/' or '*': ")
+if oper == '+':
+etc
+but will hold off until I know how to loop back and throw an error message to user
+"""
