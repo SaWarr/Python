@@ -65,3 +65,20 @@ def max_num(num1, num2, num3):
     return result
 print(max_num(2,6,7))
 
+# Dictionary basics - KVP example
+monthConversions = {
+    "Jan":"January",
+    "Feb":"February",
+    "Mar":"March",
+    "Apr":"April",
+    "May":"May",
+    "Jun":"June",
+    "Jul":"July",
+    "Aug":"August",
+    "Sep":"September",
+    "Oct":"Octcber",
+    "Nov":"November",
+    "Dec":"December"
+}
+# Could use numbers as keys ie months 0-11
+print(monthConversions.get("Jan")) # Returns January
