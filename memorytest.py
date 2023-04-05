@@ -82,3 +82,10 @@ monthConversions = {
 }
 # Could use numbers as keys ie months 0-11
 print(monthConversions.get("Jan")) # Returns January
+
+# while loops rev
+i = 1
+while i <= 10:
+    print(i) 
+    i+=1
+# should return list 1-10
