@@ -143,8 +143,11 @@ for row in number_grid:
 def oodle(name2):
     oodled = ""
     for letter in name2:
-        if letter in "AEIOUaeiou":
-            oodled = oodled + "oodle"
+        if letter.lower() in "aeiou":
+            if letter.isupper():
+                oodled = oodled + "Oodle"
+            else:
+                oodled = oodled + "oodle"
         else:
             oodled = oodled + letter
     return oodled
