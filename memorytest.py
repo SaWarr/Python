@@ -94,13 +94,34 @@ while i <= 10:
 secret_word = "flubber"
 answer = ""
 answer_counter = 0
+answer_limit = 5
+out_of_answers = False
 print("Welcome! See if you can read our mind.")
-while answer != secret_word:
-    # print("Nope! Guess again!")
-    answer = input("Can you guess the secret word? ")
-    answer_counter += 1
-print("Hooray! Well done.")
+while answer != secret_word and not(out_of_answers):
+    if answer_counter <= answer_limit:
+        answer = input("Can you guess the secret word? ")
+        answer_counter += 1
+    else:
+        out_of_answers = True
+if out_of_answers:
+    print("Hard luck.")
+else:
+    print("Hooray! Well done.")
 
+# for loops
+list = ["Potats", "Apples", "Meat", "Eggs"]
+for items in list:
+    print(items) # Loop through, list as list
+for items in range(len(list)):
+    print(list[items])
 
+for index in range(2,11):
+    print(index) #2-10
 
-
+# 2**3 == 2^3, 4**8 == 4^8
+def exponent(base, power):
+    result = 1
+    for index in range(power):
+        result = result * base
+    return result
+print(exponent(2,3))
