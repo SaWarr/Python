@@ -89,3 +89,18 @@ while i <= 10:
     print(i) 
     i+=1
 # should return list 1-10
+
+# guessing game
+secret_word = "flubber"
+answer = ""
+answer_counter = 0
+print("Welcome! See if you can read our mind.")
+while answer != secret_word:
+    # print("Nope! Guess again!")
+    answer = input("Can you guess the secret word? ")
+    answer_counter += 1
+print("Hooray! Well done.")
+
+
+
+
