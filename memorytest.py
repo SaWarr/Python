@@ -125,3 +125,27 @@ def exponent(base, power):
         result = result * base
     return result
 print(exponent(2,3))
+
+number_grid = [ # 2d list / grid - matrices workings??
+    [1,2,3],
+    [4,5,6],
+    [7,8,9],
+    [0]
+]
+print(number_grid[0][1]) #should print 2
+
+# nested for loop:
+for row in number_grid:
+    for col in row:
+        print(col) # prints all items as vals so not too helpful in this instance
+
+# letter replacement in honour of Nathalie Soffe
+def oodle(name2):
+    oodled = ""
+    for letter in name2:
+        if letter in "AEIOUaeiou":
+            oodled = oodled + "oodle"
+        else:
+            oodled = oodled + letter
+    return oodled
+print(oodle(input("What is your name? ")))
