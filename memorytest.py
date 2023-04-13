@@ -152,3 +152,30 @@ def oodle(name2):
             oodled = oodled + letter
     return oodled
 print(oodle(input("What is your name? ")))
+
+# Try except // catching errors
+try:
+    number = int(input("Enter a number: "))
+    print(number)
+except ValueError as err: #important to have specific except to cover different potential errors
+    print("Invalid input.") # Can we combine this with previous stuff?
+    print(err)
+
+# Reading from files!!!!!
+file_file = open("file.txt", "r") # just to read
+# w would be write to the file and/or change existing
+# a == append to the end of the file, not change existing
+# r+ == read and write
+print(file_file.readable) # Checks file is readable
+# EG if we had w access open, would return false
+print(file_file.read()) # full file print
+print(file_file.readline())# Reads first line
+print(file_file.readline())#reads second
+# print(file_file.readlines()) prints as list
+# print(file_file.readline()[1]) accesses specific line
+# for item in file_file.readlines():
+#   print(item) seperate lines I think?
+
+file_file.close() # Always remember to close, think like bracket
+
+# writing to files
