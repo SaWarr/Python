@@ -179,3 +179,15 @@ print(file_file.readline())#reads second
 file_file.close() # Always remember to close, think like bracket
 
 # writing to files
+file_file = open("file.txt", "a") # append, w for writing, would override file
+file_file.write("\nScoodle - Seventy") #\n new line
+# warning - permanent writing, can easily mess up original file
+file_file.close()
+
+new_file = open("newfile.txt", "w")
+new_file.write("blahblahblah")
+new_file.close()
+# could try with a .html and write a simple webpage through python
+
+# Modules and Pip
+# New file required
