@@ -191,3 +191,21 @@ new_file.close()
 
 # Modules and Pip
 # New file required
+
+# classes can effectively be new data types
+# useful for modelling abstracts
+# create a 'variable' data class
+# pokemon for example
+
+class pokemon:
+    def __init__(self, name, number, combat_power, hit_points): #initialise function
+        # map out attributes of class as names above after self
+        self.name = name
+        self.number = number
+        self.combat_power = combat_power
+        self.hit_points = hit_points
+#class defines the template, object is a thing fitting that template
+# just defined what a pokemon is in the program
+
+
+
