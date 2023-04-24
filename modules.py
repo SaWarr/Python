@@ -12,8 +12,20 @@ print(tools.roll_dice(6))
 # could also pip uninstall pythongfdjkfajbkfa
 
 # importing from main memory test to trial
+
 from memorytest import pokemon
 
 pokemon1 = pokemon("Bulbasaur", 1, 150, 100) # object instance of class pokemon
 pokemon2 = pokemon("Squirtle", 4, 150, 100)
-print(pokemon1.name + pokemon1.number)
+print(pokemon1.name + str(pokemon1.number))
+
+print(pokemon1.hard_hitter()) # calling function defined in class
+pokemon1.attack()
+
+class swimming_pokemon(pokemon):
+    # class inheritance example
+    def surf(self):
+        print("The pokemon surfs!")
+    # can override inherited functions
+    def attack(self):
+        print("The pokemon uses a water attack!")

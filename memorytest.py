@@ -206,6 +206,21 @@ class pokemon:
         self.hit_points = hit_points
 #class defines the template, object is a thing fitting that template
 # just defined what a pokemon is in the program
+    def hard_hitter(self): #define function in class
+        if self.combat_power >= 75:
+            return True
+        else:
+            return False
 
+    def attack(self):
+        print("The Pokemon attacks!")
 
+    def defend(self):
+        print("The Pokemon braces for an attck!")
 
+"""
+cmd prompt py interpreter
+text commands, like a sandbox to try python commands
+simply type python and go
+not ideal for any longish scripts
+"""
