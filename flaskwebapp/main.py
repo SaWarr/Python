@@ -12,6 +12,8 @@ if __name__ == '__main__':
     # only if we run this file, not import,
     # will this line be executed
     app.run(debug=True)
-    # runs flask app, sorts web server
+    # runs flask app, reruns web server when amending python
+
+
 
 
