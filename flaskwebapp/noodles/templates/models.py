@@ -9,9 +9,15 @@ class User(db.Model, UserMixin):
     email = db.Column(db.String(150), unique=True)
     password = db.Column(db.String(150))
     first_name = db.Column(db.String(150))
+    notes = db.relationship('Note') # list storing all notes
+
 
 class Note(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     text = db.Column(db.String(5000))
-    date = db.Column(db.DateTime(timezone=True), default=func.now)
+    date = db.Column(db.DateTime(timezone=True), default=func.now())
+    # Notes must belong to user, association with user
+    user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
+    # must pass valid user id, one to many, user to notes
     
+# class Reminder / Video etc (db.Model)  - - could add all sorts of other stuff
